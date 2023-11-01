@@ -97,8 +97,13 @@ plt.show()
 
 
 
+
 FUTURE SALES PREDICTION
-Predict the effect of future sales promotion using AutoAI capabilities within IBM Watson Studio This tutorial guides you through training a model to predict the increase in sales of an item after promotion. In this tutorial, you will create an AutoAI experiment in IBM Watson Studio to build a model that analyzes your data and selects the best model type and estimators to produce, train, and optimize pipelines, which are model candidates. After reviewing the pipelines, you will save one as a model, deploy it, then test it to get a prediction.
+
+
+
+
+Predict of future sales promotion using AutoAI capabilities within IBM Watson Studio This tutorial guides you through training a model to predict the increase in sales of an item after promotion. In this tutorial, you will create an AutoAI experiment in IBM Watson Studio to build a model that analyzes your data and selects the best model type and estimators to produce, train, and optimize pipelines, which are model candidates. After reviewing the pipelines, you will save one as a model, deploy it, then test it to get a prediction.
 
 Pre-requisites
 

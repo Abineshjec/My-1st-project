@@ -98,22 +98,24 @@ plt.show()
 
 
 
-FUTURE SALES PREDICTION
+FUTURE SALES PREDICTION:-
 
 
 
 
 Predict of future sales promotion using AutoAI capabilities within IBM Watson Studio This tutorial guides you through training a model to predict the increase in sales of an item after promotion. In this tutorial, you will create an AutoAI experiment in IBM Watson Studio to build a model that analyzes your data and selects the best model type and estimators to produce, train, and optimize pipelines, which are model candidates. After reviewing the pipelines, you will save one as a model, deploy it, then test it to get a prediction.
 
-Pre-requisites
+Pre-requisites:-
 
-IBM Cloud Account: Visit https://ibm.biz/autoailab and fill in your details to create an account or click 'Log in' if you already have an account.
+IBM Cloud Account:-
+Visit https://ibm.biz/autoailab and fill in your details to create an account or click 'Log in' if you already have an account.
 
 Create instances of the following: Click on 'Catalog', look for Object Storage, give it a name (or leave the default) and click 'Create'. Do the same to create instances for Watson Machine Learning and Watson Studio.
 
-Dataset: Download the Sales.csv dataset.
+Dataset:-
+Download the Sales.csv dataset.
 
-The dataset contains the follwing columns:
+The dataset contains the follwing columns:-
 
 Class which describes the Product type Cost is the Unit price Promotion is the Index of amount spent on a particular promotion Before describes the Revenue before promotion After describes the Revenue after promotion Step 1: Build and train the model In your Watson Studio instance, click Get Started > Create a project > Create an empty project
 
@@ -137,25 +139,34 @@ Once the pipeline creation is complete, you can see all the ranked pipelines in 
 
 Choose 'Save as model' and then click 'Save' for thr pipeline ranked 1st. This saves the pipeline as a Machine Learning asset in your project so you can deploy, train, and test it.
 
-Step 2: Deploy the trained model Before you can use your trained model to make predictions on new data, you must deploy the model.
+Step 2:-
+       Deploy the trained model Before you can use your trained model to make predictions on new data, you must deploy the model.
 
-The model can be deployed from the model details page. You can access the model details page in one of these ways:
+       The model can be deployed from the model details page. You can access the model details page in one of these ways:
 
-Clicking on the model name in the notification displayed when you save the model...or, Open the Assets page for the project containing the model and click the model name in the Machine Learning Model section.
+        Clicking on the model name in the notification displayed when you save the model...or, Open the Assets page for the project containing the           model and click the model name in the Machine Learning Model section.
 
-From the model details page, go to the 'Deployments' tab, click 'Add Deployment'.
+        From the model details page, go to the 'Deployments' tab, click 'Add Deployment'.
 
-Give your deployment a name, an optional description, select “Web service” as the Deployment type and click 'Save'.
+        Give your deployment a name, an optional description, select “Web service” as the Deployment type and click 'Save'.
 
-Once saved, click on the deployment name to view the deployment details page.
+        Once saved, click on the deployment name to view the deployment details page.
 
-Step 3: Test the deployed model The deployed model can be tested from the deployment details page. On the 'Test' tab of the deployment details page, test data can be entered in the fields provided or in JSON format.
+Step 3:-
+       Test the deployed model The deployed model can be tested from the deployment details page. On the 'Test' tab of the deployment details page,         test data can be entered in the fields provided or in JSON format.
 
-Note that the test data replicates the data fields for the model with the exception of the prediction field.
+       Note that the test data replicates the data fields for the model with the exception of the prediction field.
 
-Enter the following test data in the JSON editor (or alternatively enter the values into the fields):
+       Enter the following test data in the JSON editor (or alternatively enter the values into the fields):
 
-{"input_data":[{ "fields": ["Class","Cost","Promotion","Before","After"], "values": [["Luxury",13.357,1920, 117440,125073]] }]} Click 'Predict' to predict the increase in sales for that item after the promotion.
+        {
+        "input_data":[
+        { 
+        "fields": ["Class","Cost","Promotion","Before","After"], 
+        "values": [["Luxury",13.357,1920, 117440,125073]] }
+        ]
+        }
+        Click 'Predict' to predict the increase in sales for that item after the promotion.
 
 
 
